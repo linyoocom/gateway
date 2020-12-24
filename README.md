@@ -34,3 +34,8 @@ $ php bin/hyperf.php start
 This will start the cli-server on port `9501`, and bind it to all network interfaces. You can then visit the site at `http://localhost:9501/`
 
 which will bring up Hyperf default home page.
+
+启动服务中心consul  启动jsonrpc服务端 启动gateway消费端
+#然而文档中并没有说明如何安装 Consul 服务，以下对 Consul 做一个简单的安装
+#docker pull consul
+#docker run --name=consul -p 8500:8500 -e CONSUL_BIND_INTERFACE=eth0 -d consul
