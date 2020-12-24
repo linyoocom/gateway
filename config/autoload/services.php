@@ -37,7 +37,7 @@ return [
             //目前仅支持 jsonrpc 和 jsonrpc-http 协议发布到服务中心去，其它协议尚未实现服务注册
             'registry' => [
                 'protocol' => 'consul',
-                'address' => 'http://127.0.0.1:8500',
+                'address' => 'http://172.16.2.31:8500',  //consul服务中心地址
             ],
             // 如果没有指定上面的 registry 配置，即为直接对指定的节点进行消费，通过下面的 nodes 参数来配置服务提供者的节点信息
             'nodes' => [
